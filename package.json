@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://progermir.github.io/",
+  "homepage": "https://progermir.github.io/real-estate",
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
