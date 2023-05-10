@@ -1,0 +1,16 @@
+@mixin decornumber {
+  position: absolute;
+  top:0;
+  line-height: 1.17;
+
+  font-family: $font-accent;
+  font-size: 400px;
+  opacity: .02;
+}
+
+
+@mixin mediaTablet{
+  @media (max-width:$tablet){
+    @content;
+  }
+}
