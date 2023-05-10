@@ -1,0 +1,49 @@
+
+.form__input {
+  height: 50px;
+  padding: 12px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: $white;
+  font-size: 14px;
+
+  transition: all .2s linear;
+
+  &:focus{
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  &::placeholder{
+    color: #bebebe;
+  }
+
+}
+.form__privacy {
+  font-size: 13px;
+  line-height: 1.23;
+
+  text-align: center;
+
+  color: #E7E7E7;
+
+  @include mediaTablet{
+    font-size: 12px;
+    grid-row: 4 / 5
+    // order: 1;
+  }
+}
+
+.form__button {
+  background-color: $accent;
+  height: 50px;
+  padding: 12px;
+  color: $white;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color .2s linear;
+
+  &:hover{
+    background-color: darken($accent, 15%);  
+  }
+}
