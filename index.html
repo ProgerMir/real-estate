@@ -162,10 +162,161 @@
 
 
 
+
+<!-- Calculator -->
+
+<section class="calc-wrapper">
+  <div class="container">
+    <form id="form">
+      <div class="heading">
+        <h1 class="heading-title">Калькулятор стоимости ремонта</h1>
+        <p class="heading-desc">Базовая цена за 1 м² = 5 тыс. рублей</p>
+      </div>
+
+      <!-- Площадь -->
+      <div class="calc-section">
+        <label class="checkbox-wrapper title-bold section-title .section-title--vertical-center">
+          <span class="title__inline">Площадь квартиры:</span>
+          <input type="number" min="0" max="200" value="50" id="square-input" class="title__inline input-short" />
+          <span class="title__inline">м²</span>
+        </label>
+        <input type="range" id="square-range" class="range-input" min="0" max="200" value="50" step="1" />
+      </div>
+      <!-- // Площадь -->
+
+      <!-- Мобильная адаптивность -->
+      <div class="calc-section">
+        <h4 class="title-bold">Тип ремонта</h4>
+        <div class="repair-wrapper title-bold section-title">
+        <label class="radio-wrapper" data-name="mobile">
+          <input type="radio" class="radio" name="type" value="1" checked />
+          <div class="title-lite">Косметический</div>
+        </label>
+        <label class="radio-wrapper" data-name="mobile">
+          <input type="radio" class="radio" name="type" value="1.3"  />
+          <div class="title-lite">
+            Евро
+            <span class="note">+30% к стоимости</span>
+          </div>
+        </label>
+        <label class="radio-wrapper" data-name="mobile">
+          <input type="radio" class="radio" name="type" value="1.5" />
+          <div class="title-lite">
+            Под ключ
+            <span class="note">+50% к стоимости</span>
+          </div>
+        </label>
+      </div>
+    </div>
+      <!-- // Мобильная адаптивность -->
+
+      <!-- Мобильная адаптивность -->
+      <div class="calc-section">
+        <h4 class="title-bold"> Тип дома</h4>
+          <div class="repair-wrapper title-bold section-title">
+          <label class="radio-wrapper">
+          <input type="radio" class="radio" name="building" value="1" checked />
+          <div class="title-lite">Новостройка</div>
+        </label>
+        <label class="radio-wrapper">
+          <input type="radio" class="radio" name="building" value="1.1" />
+          <div class="title-lite">
+            Вторичка
+            <span class="note">+10% к стоимости</span>
+          </div>
+        </label>
+      </div>
+      </div>
+      <!-- // Мобильная адаптивность -->
+
+      <!-- Количество комнат -->
+      <div class="calc-section">
+        <h4 class="title-bold">Количество комнат</h4>
+
+        <div class="repair-wrapper title-bold section-title">
+        <div class="rooms-wrapper">
+          <label class="rooms-label">
+            <input class="rooms-radio-real" type="radio" name="rooms" value="0.8" />
+            <span class="rooms-radio-fake">C</span>
+          </label>
+
+          <label class="rooms-label">
+            <input class="rooms-radio-real" type="radio" name="rooms" value="1" checked />
+            <span class="rooms-radio-fake">1</span>
+          </label>
+
+          <label class="rooms-label">
+            <input class="rooms-radio-real" type="radio" name="rooms" value="1.03"  />
+            <span class="rooms-radio-fake">2</span>
+          </label>
+
+          <label class="rooms-label">
+            <input class="rooms-radio-real" type="radio" name="rooms" value="1.05" />
+            <span class="rooms-radio-fake">3</span>
+          </label>
+
+          <label class="rooms-label">
+            <input class="rooms-radio-real" type="radio" name="rooms" value="1.15" />
+            <span class="rooms-radio-fake">4</span>
+          </label>
+
+          <label class="rooms-label">
+            <input class="rooms-radio-real" type="radio" name="rooms" value="1.35" />
+            <span class="rooms-radio-fake">5</span>
+          </label>
+        </div>
+      </div>
+    </div>
+      <!-- // Количество комнат -->
+
+      <!-- Дополнительные опции -->
+      <div class="calc-section">
+        <h4 class="title-bold">Дополнительные опции</h4>
+        <div class="repair-wrapper title-bold section-title">
+        <label class="radio-wrapper">
+          <input type="checkbox" class="radio" name="ceiling" value="1.1" />
+          <div class="title-lite">
+            Натяжные потолки
+            <span class="note">+10% к стоимости</span>
+          </div>
+        </label>
+        <label class="radio-wrapper">
+          <input type="checkbox" class="radio" name="walls" value="1.1" />
+          <div class="title-lite">
+            Покраска стен
+            <span class="note">+10% к стоимости</span>
+          </div>
+        </label>
+        <label class="radio-wrapper">
+          <input type="checkbox" class="radio" name="floor" value="1.1" />
+          <div class="title-lite">
+            Теплый пол
+            <span class="note">+10% к стоимости</span>
+          </div>
+        </label>
+      </div>
+    </div>
+      <!-- // Дополнительные опции -->
+
+      <!-- Стоимость ремонта -->
+      <div class="calc-price">
+        <div class="calc-price-title">Стоимость ремонта:</div>
+        <div class="calc-price-value">
+          <span id="total-price">0</span>
+          рублей
+        </div>
+      </div>
+      <!-- // Стоимость ремонта -->
+    </form>
+  </div>
+</section>
+
+
+<!-- Video -->
   <section class="video">
     <div class="container">
-      <h2 class="visually-hidden">Видео о "Лофт Хаус"</h2>
-
+      <!-- <h2 class="visually-hidden">Видео о "Лофт Хаус"</h2> -->
+      <h1 class="heading-title">Видео о "Лофт Хаус"</h1>
       <a data-youtubeLightbox href="https://youtu.be/nZFuM9UVlVw" class="video__link">
         <img class="video__img" src="./img/video/video.jpg" alt="Video player">
         <img class="video__icon" src="./img/video/play.svg" alt="play">
@@ -262,9 +413,6 @@
     </div>
   </div>
 </footer>
-
-
-
 
 <!-- YouTube LightBox -->
 <div id="youtubelightbox" class="youtubelightbox">
