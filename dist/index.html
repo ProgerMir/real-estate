@@ -11,24 +11,25 @@
 <body>
 <div class="page">
     
-  <header class="header">
+  <header class="header" id="header">
 
         <div class="header__top">
             <div class="container">
                 <div class="header__top-row">
-                    <a href="#">
+                    <a href="./">
                         <img src="./img/logo.svg" alt="Logo">
                     </a>
                     <div class="header__nav">
                         <nav class="nav">
                             <ul class="nav__list">
-                                <li> <a href="#">О комплексе</a></li>
-                                <li> <a href="#">Каталог</a></li>
-                                <li> <a href="#">Просмотр</a></li>
-                                <li> <a href="#">Калькулятор</a></li>
-                                <li> <a href="#">Видео</a></li>
-                                <li> <a href="#">Район</a></li>
-                                <li> <a href="#">Контакты</a></li>
+                                <li> <a class="smooth-scroll" href="#header">О комплексе</a></li>
+                                <li> <a class="smooth-scroll" href="#apartments">Каталог</a></li>
+                                <!-- <li> <a class="apartments" href="#!">Каталог</a></li> -->
+                                <li> <a class="smooth-scroll" href="#see">Просмотр</a></li>
+                                <li> <a class="smooth-scroll" href="#calculator">Калькулятор</a></li>
+                                <li> <a class="smooth-scroll" href="#video">Видео</a></li>
+                                <li> <a class="smooth-scroll" href="#place">Район</a></li>
+                                <li> <a class="smooth-scroll" href="#contacts">Контакты</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -47,7 +48,7 @@
                 <h1 class="header__title">
                 Жилой комплекс <br />
                 в историческом центре
-                <a href="#benefits">
+                <a href="#about" id="about">
                     <img class="header__title-icon" src="./img/header/mouse.svg" alt="mouse">
                 </a>    
             </h1>
@@ -103,7 +104,7 @@
   </section>
 
 
-  <section class="apartments">
+  <section class="apartments" id="apartments">
     <div class="container">
       
       <div class="apartments__title">
@@ -140,7 +141,7 @@
 
 
 
-  <section class="cta">
+  <section class="cta" id="see">
     <div class="container">
       <div class="cta__title">
         <h2 class="title-2">Хотите посмотреть?</h2>
@@ -167,7 +168,7 @@
 
 <!-- Calculator -->
 
-<section class="calc-wrapper">
+<section class="calc-wrapper" id="calculator">
   <div class="container">
     <form id="form">
       <div class="heading">
@@ -233,10 +234,12 @@
 
       <!-- Количество комнат -->
       <div class="calc-section">
-        <h4 class="title-bold">Количество комнат</h4>
+        <div class="repair-wrapper">
+          <div class="rooms-wrapper">
+          <h4 class="title-bold">Количество комнат</h4>
 
-        <div class="repair-wrapper title-bold section-title">
-        <div class="rooms-wrapper">
+        
+          <div class="rooms-label__wrapper">
           <label class="rooms-label">
             <input class="rooms-radio-real" type="radio" name="rooms" value="0.8" />
             <span class="rooms-radio-fake">C</span>
@@ -266,6 +269,7 @@
             <input class="rooms-radio-real" type="radio" name="rooms" value="1.35" />
             <span class="rooms-radio-fake">5</span>
           </label>
+        </div>
         </div>
       </div>
     </div>
@@ -315,7 +319,7 @@
 
 
 <!-- Video -->
-  <section class="video">
+  <section class="video" id="video">
     <div class="container">
       <!-- <h2 class="visually-hidden">Видео о "Лофт Хаус"</h2> -->
       <h1 class="heading-title">Видео о "Лофт Хаус"</h1>
@@ -328,7 +332,7 @@
   </section>
 
 
-  <section class="section-map">
+  <section class="section-map" id="place">
     <div class="container">
       <div class="section-map__title">
         <h2 class="title-2">Район на карте</h2>
@@ -345,7 +349,7 @@
 
 
 
-  <section class="feedback">
+  <section class="feedback" id="contacts">
     <div class="container">
       <div class="feedback__title">
         <h2 class="title-2">
@@ -426,8 +430,13 @@
 </div>
 
 
+<div class="arrow">
+  <a class="smooth-scroll" href="#header"></a>
+</div>
 
 </div>
+<!-- page / -->
+
 <script src="https://api-maps.yandex.ru/2.1/?apikey=65518e26-e02d-48b3-99e7-fa880199730c&lang=ru_RU" type="text/javascript">
 </script>
 <script src="./libs/youtubeLightbox/youtubeLightbox.js"></script>

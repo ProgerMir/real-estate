@@ -1,0 +1,38 @@
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #cecece;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  z-index: 100;
+  transition: all .2s linear;
+
+  &:hover{
+    background-color: $dark;
+    
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    top:30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    width: 0;
+    height: 0;
+    border-width: 0 8px 13.9px 8px;
+    border-color: transparent transparent $dark transparent;
+    border-style: solid;
+
+  }
+
+  &:hover::after {
+    border-color: transparent transparent #cecece transparent;
+  }
+
+}
+
