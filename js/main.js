@@ -126,3 +126,62 @@ for(const input of inputs){
     calculate()
   })
 }
+
+// <Calculator />
+
+
+// Smooth Scroll
+
+const links = document.querySelectorAll('.smooth-scroll')
+
+links.forEach(function(item){
+  item.addEventListener('click', function(event){
+    event.preventDefault();
+    const blockID = event.target.getAttribute('href').substr(1)
+    
+     document.querySelector('#'+blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+     })
+  })
+})
+
+
+
+// function scrollTo(element){
+//   window.scroll({
+//     left:0,
+//     top: element.offsetTop,
+//     behavior: 'smooth',
+//   })
+// }
+
+
+
+// const linkClick = document.querySelectorAll('[data-href]')
+
+// linkClick.forEach(function(item){
+//   item.addEventListener('click', function(){
+//     const valueDataset = this.dataset.href
+    
+//     const scrollToBlock = document.querySelectorAll('#'+valueDataset);
+
+
+
+//     scrollTo(scrollToBlock)
+//   })
+// })
+
+
+
+
+// const apartments = document.querySelector('.apartments')
+// const apartmentsBlock = document.querySelector('#apartments')
+
+// apartments.addEventListener('click', function(){
+//   scrollTo(apartmentsBlock)
+// })
+
+
+// Smooth Scroll /
+

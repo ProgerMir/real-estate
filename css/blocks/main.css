@@ -847,10 +847,18 @@ a:hover {
 
 .rooms-wrapper {
   display: flex;
-  flex-direction: start;
   align-items: center;
   flex-wrap: wrap;
-  color: #2D343C;
+  color: #fff;
+  row-gap: 5px;
+}
+.rooms-wrapper .title-bold {
+  margin-right: 15px;
+}
+
+.rooms-label__wrapper {
+  display: flex;
+  flex-wrap: wrap;
   row-gap: 5px;
 }
 
@@ -868,7 +876,7 @@ a:hover {
   display: inline-block;
   width: 50px;
   height: 50px;
-  background-color: #e2e2e2;
+  background-color: #7e858d;
   text-align: center;
   line-height: 50px;
   font-size: 22px;
@@ -878,6 +886,7 @@ a:hover {
 
 .rooms-radio-real:checked + .rooms-radio-fake {
   background-color: #fbd422;
+  color: #242B33;
 }
 
 .section-map {
@@ -1000,4 +1009,37 @@ a:hover {
 
 [class*=gototech] {
   display: none;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #cecece;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  z-index: 100;
+  transition: all 0.2s linear;
+}
+.arrow:hover {
+  background-color: #242B33;
+}
+.arrow::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  width: 0;
+  height: 0;
+  border-width: 0 8px 13.9px 8px;
+  border-color: transparent transparent #242B33 transparent;
+  border-style: solid;
+}
+.arrow:hover::after {
+  border-color: transparent transparent #cecece transparent;
 }/*# sourceMappingURL=main.css.map */
