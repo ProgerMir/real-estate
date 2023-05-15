@@ -1012,7 +1012,7 @@ a:hover {
 }
 
 .arrow {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -1039,7 +1039,15 @@ a:hover {
   border-width: 0 8px 13.9px 8px;
   border-color: transparent transparent #242B33 transparent;
   border-style: solid;
+  cursor: pointer;
 }
 .arrow:hover::after {
   border-color: transparent transparent #cecece transparent;
+}
+
+.arrow .smooth-scroll {
+  font-size: 0px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }/*# sourceMappingURL=main.css.map */
