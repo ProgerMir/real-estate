@@ -1,5 +1,5 @@
 .arrow {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -27,6 +27,7 @@
     border-width: 0 8px 13.9px 8px;
     border-color: transparent transparent $dark transparent;
     border-style: solid;
+    cursor: pointer;
 
   }
 
@@ -34,5 +35,10 @@
     border-color: transparent transparent #cecece transparent;
   }
 
+}
+
+.arrow .smooth-scroll{
+  font-size: 0px;
+  appearance: none;
 }
 
